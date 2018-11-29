@@ -5,8 +5,8 @@
    Tutorial 5
    Case Problem 1
    
-   Author:   
-   Date:     
+   Author:  Dajah Medina 
+   Date:   11.28.18  
    
    Filename: gp_layout.css
 
@@ -22,10 +22,15 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+body {
+    -webkit-flex: row wrap;
+    flex: row wrap;
+}
 
-
-
-
+section#sheet article {
+    -webkit-flex: 3 1 301px;
+    flex: 3 1 301px;
+}
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
@@ -39,4 +44,3 @@
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
