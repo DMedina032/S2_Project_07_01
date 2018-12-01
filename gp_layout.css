@@ -23,18 +23,18 @@
 
 /* Flex Layout Styles */
 body {
-    /* display: -webkit-flex;
-    display: flex; */
-    -webkit-flex: row wrap;
-    flex: row wrap;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
-section#sheet article {
+section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
 
-article {
+body>article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
 }
@@ -49,13 +49,11 @@ article {
     }
 
     nav.horizontal {
-        -webkit-flex: 99;
-        flex: 99;
+        order: 99;
     }
 
     body>footer {
-        -webkit-flex: 100;
-        flex: 100;
+        order: 100;
     }
 }
 
@@ -66,13 +64,32 @@ article {
 
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
+        display: -webkit-flex;
         display: flex;
-        flex-flow: row wrap;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
         height: 40px;
     }
-}
 
-nav.horizontal li ul {
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
+
+    nav.horizontal ul li {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    img.size1 {
+        width: 100%;
+    }
+
+    img.size2 {
+        width: 60%;
+    }
+
+    img.size3 {
+        width: 40%;
+    }
+
+    img.size4 {
+        width: 30%;
+    }
 }
