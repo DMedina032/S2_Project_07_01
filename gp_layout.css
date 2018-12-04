@@ -22,6 +22,8 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* I created a body tag and i set it to a display of webkit for the browser extention and the display of flex for the opposite of webkit and did a row wrap for teh elements. 
+I then wrote a section element with an id of sheet and gave it a webkit and flex both set to the same thing. I then wrote a body tag with a child of article with another webkit and flex.  */
 body {
     display: -webkit-flex;
     display: flex;
@@ -42,8 +44,8 @@ body>article {
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
    ============================================
-*/
-@media only screen and (max-width: 480px) {
+   /* I did a media querie set for screens with a maximunm width of 480px and withing that I put in a image tag with an class of panel and set the width to 100% so it would take up the wole screen. I then put in a nav with a class of horizontal and gave it an order. Last thing I gave it was a body tag with the footer being a child of the body and then set the order for that. */
+*/ @media only screen and (max-width: 480px) {
     img.panel {
         width: 100%;
     }
@@ -61,7 +63,7 @@ body>article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
+/* I did a media querie for only screens width a minumum width of 481px and then put inside I put a nav tag with a class of horizontal and a ul. I then set the displays to webkit and flex and gave it a row of nowrap adn height of 40px. */
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
         display: -webkit-flex;
@@ -71,12 +73,14 @@ body>article {
         height: 40px;
     }
 
+    /* I put a nav tag with an class and gave it the ul and li and set the wekits and flex. */
 
     nav.horizontal ul li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
     }
 
+    /* I gave each image a different width. */
     img.size1 {
         width: 100%;
     }

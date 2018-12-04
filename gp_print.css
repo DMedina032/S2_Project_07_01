@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/* for the nav, footer, and article I gave it a display of none so it wold not sho up on the printed paper. */
 
 nav,
 footer,
@@ -25,6 +26,7 @@ article {
 }
 
 /* Comic Book Sheet Styles */
+/* for the section I gave it an id of sheet to target a specific one and gave it a width and a margin size. After that, I set the images with different widths again. */
 section#sheet {
     width: 6in;
     margin: 0in auto 0in auto;
